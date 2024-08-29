@@ -1,2 +1,3 @@
 # \#Movies
-## docker compose up -d
+docker compose up -d
+> http://localhost
