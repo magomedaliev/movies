@@ -1,0 +1,24 @@
+services:
+  movies-client:
+    container_name: movies-client
+    build: ./client
+    ports:
+      - 80:80
+    networks:
+      - movies-net
+    depends_on:
+      - movies-server
+    restart: always
+
+  movies-server:
+    container_name: movies-server
+    build: ./server
+    ports:
+      - 3000:3000
+    networks:
+      - movies-net
+    restart: always
+
+networks:
+  movies-net:
+    name: movies-net
