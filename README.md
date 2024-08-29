@@ -1,1 +1,2 @@
-# movies
+# \#Movies
+## docker compose up -d
